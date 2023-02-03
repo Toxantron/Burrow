@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+  <!-- Central package version management -->
+  <PropertyGroup>
+    <MoryxCoreVersion>3.7.0</MoryxCoreVersion>
+    <MoryxClientFrameworkVersion>3.2.1</MoryxClientFrameworkVersion>
+    <MoryxMaintenanceWebVersion>3.1.1</MoryxMaintenanceWebVersion>
+    <MoryxAbstractionLayerVersion>5.13.1</MoryxAbstractionLayerVersion>
+    <MoryxFactoryVersion>4.2.0</MoryxFactoryVersion>
+  </PropertyGroup>
+
+  <!-- Package versions for package references across all projects -->
+  <ItemGroup>
+    <!--3rd party dependencies-->
+    <PackageReference Update="Caliburn.Micro" Version="3.2.0" />
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Update="Moq" Version="4.14.6" />
+    <PackageReference Update="NUnit" Version="3.12.0" />
+
+    <!--Platform dependencies-->
+    <PackageReference Update="Moryx" Version="$(MoryxCoreVersion)" />
+    <PackageReference Update="Moryx.TestTools.UnitTest" Version="$(MoryxCoreVersion)" />
+    <PackageReference Update="Moryx.Model.InMemory" Version="$(MoryxCoreVersion)" />
+    <PackageReference Update="Moryx.Model.PostgreSQL" Version="$(MoryxCoreVersion)" />
+    <PackageReference Update="Moryx.Container" Version="$(MoryxCoreVersion)" />
+    <PackageReference Update="Moryx.Runtime" Version="$(MoryxCoreVersion)" />
+    <PackageReference Update="Moryx.Runtime.Kestrel" Version="$(MoryxCoreVersion)" />
+    <PackageReference Update="Moryx.Runtime.Kernel" Version="$(MoryxCoreVersion)" />
+    <PackageReference Update="Moryx.Runtime.Maintenance" Version="$(MoryxCoreVersion)" />
+    <PackageReference Update="Moryx.Runtime.SmokeTest" Version="$(MoryxCoreVersion)" />
+    <PackageReference Update="Moryx.Asp.Extensions" Version="$(MoryxCoreVersion)"/>
+    <PackageReference Update="Moryx.TestTools.UnitTest" Version="$(MoryxCoreVersion)" />
+
+    <!--Maintenance dependencies-->
+    <PackageReference Update="Moryx.Runtime.Maintenance.Web" Version="$(MoryxMaintenanceWebVersion)" />
+
+    <!--ClientFramework dependencies-->
+    <PackageReference Update="Moryx.Controls" Version="$(MoryxClientFrameworkVersion)" />
+    <PackageReference Update="Moryx.ClientFramework" Version="$(MoryxClientFrameworkVersion)" />
+    <PackageReference Update="Moryx.ClientFramework.Configurator" Version="$(MoryxClientFrameworkVersion)" />
+    <PackageReference Update="Moryx.ClientFramework.Kernel" Version="$(MoryxClientFrameworkVersion)" />
+    <PackageReference Update="Moryx.ClientFramework.SimpleShell" Version="$(MoryxClientFrameworkVersion)" />
+
+    <!--AbstractionLayer dependencies-->
+    <PackageReference Update="Moryx.AbstractionLayer" Version="$(MoryxAbstractionLayerVersion)" />
+    <PackageReference Update="Moryx.AbstractionLayer.TestTools" Version="$(MoryxAbstractionLayerVersion)" />
+    <PackageReference Update="Moryx.Resources.Interaction" Version="$(MoryxAbstractionLayerVersion)" />
+    <PackageReference Update="Moryx.Products.Management" Version="$(MoryxAbstractionLayerVersion)" />
+    <PackageReference Update="Moryx.Resources.Management" Version="$(MoryxAbstractionLayerVersion)" />
+    <PackageReference Update="Moryx.AbstractionLayer.UI" Version="$(MoryxAbstractionLayerVersion)" />
+    <PackageReference Update="Moryx.Products.UI" Version="$(MoryxAbstractionLayerVersion)" />
+    <PackageReference Update="Moryx.Products.UI.Interaction" Version="$(MoryxAbstractionLayerVersion)" />
+    <PackageReference Update="Moryx.Resources.UI.Interaction" Version="$(MoryxAbstractionLayerVersion)" />
+  </ItemGroup>
+
+</Project>

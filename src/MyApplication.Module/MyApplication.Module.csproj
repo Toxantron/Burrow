@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net5.0</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Description>Sample module</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moryx.Runtime" />
+  </ItemGroup>
+
+</Project>
